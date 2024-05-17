@@ -33,5 +33,12 @@ function updateTimeAndDate() {
 
 setInterval(updateTimeAndDate, 1000);
 
+let darkTheme = false;
+
+function changeTemplate() {
+    darkTheme = !darkTheme;
+    document.body.classList.toggle('dark-theme', darkTheme);
+}
+
 // Existing functions for showing family members and tasks
 // Add your family members and tasks functions here
