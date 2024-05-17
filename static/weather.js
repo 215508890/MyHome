@@ -1,12 +1,9 @@
-function fetchWeather() {
-    // Assuming you have an API endpoint or a third-party API for weather data
-    fetch('/api/weather')
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById('weather').innerHTML = `Current temperature: ${data.temperature}°C, ${data.description}`;
-    })
-    .catch(error => console.error('Failed to fetch weather data:', error));
+// This is a mock function, replace with actual API call logic
+function updateWeather() {
+    fetchWeatherData().then(weather => {
+        document.getElementById('weather').innerText = `Weather: ${weather.temp}°C, ${weather.description}`;
+    });
 }
 
-fetchWeather();  // Initial call to fetch weather
-setInterval(fetchWeather, 1800000);  // Update weather every 30 minutes
+updateWeather(); // Initial call
+setInterval(updateWeather, 3600000); // Update hourly
