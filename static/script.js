@@ -23,3 +23,13 @@ function showTasks() {
     const content = document.getElementById('content');
     content.innerHTML = '<h2>Tasks</h2><p>List of tasks will go here.</p>';
 }
+
+function updateTime() {
+    const now = new Date();
+    document.getElementById('time').innerHTML = now.toLocaleTimeString();
+}
+
+setInterval(updateTime, 1000);  // Updates the time every second
+
+// Existing functions for showing family members and tasks
+// Add your family members and tasks functions here
