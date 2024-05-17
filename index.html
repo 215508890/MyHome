@@ -12,8 +12,8 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                <div class="position-sticky pt-3 sidebar-styling">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+                <div class="position-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#" onclick="showHome()">
@@ -35,7 +35,7 @@
             </nav>
 
             <!-- Main content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-content">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Dashboard</h1>
                     <div class="time" id="time"></div>
@@ -44,7 +44,6 @@
                 <div id="content">
                     <!-- Content gets loaded here based on menu selection -->
                     <canvas id="familyChart" width="400" height="400"></canvas>
-                    <script src="static/dashboard.js"></script>
                 </div>
             </main>
         </div>
@@ -52,5 +51,6 @@
 
     <script src="static/script.js"></script>
     <script src="static/weather.js"></script>
+    <script src="static/dashboard.js"></script> <!-- Ensure this is correctly included -->
 </body>
 </html>
