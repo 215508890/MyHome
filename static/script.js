@@ -24,12 +24,14 @@ function showTasks() {
     content.innerHTML = '<h2>Tasks</h2><p>List of tasks will go here.</p>';
 }
 
-function updateTime() {
+function updateTimeAndDate() {
     const now = new Date();
-    document.getElementById('time').innerHTML = now.toLocaleTimeString();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    document.getElementById('time').innerText = now.toLocaleTimeString();
+    document.getElementById('date').innerText = now.toLocaleDateString('en-US', options);
 }
 
-setInterval(updateTime, 1000);  // Updates the time every second
+setInterval(updateTimeAndDate, 1000);
 
 // Existing functions for showing family members and tasks
 // Add your family members and tasks functions here
