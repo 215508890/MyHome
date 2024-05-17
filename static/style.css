@@ -1,42 +1,20 @@
 body {
-    display: flex;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.sidebar {
-    width: 200px;
-    background-color: #f4f4f4;
-    height: 100vh; /* Full height */
-    overflow: auto; /* Enables scrolling if the window is too small */
+.bg-light {
+    background-color: #f8f9fa!important;
 }
 
-.sidebar h2 {
-    padding: 10px;
+.sidebar .nav-link {
+    color: #007bff;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li a {
-    display: block;
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-    background-color: #ddd;
+.sidebar .nav-link.active {
+    color: #fff;
+    background-color: #007bff;
 }
 
 .main-content {
-    flex-grow: 1; /* Takes up the remaining width */
     padding: 20px;
-}
-
-.main-content h1 {
-    color: #333;
 }
