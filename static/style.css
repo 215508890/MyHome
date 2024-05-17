@@ -7,22 +7,31 @@ body, html {
 }
 
 /* Sidebar styling */
-.sidebar {
-    background-color: #ffffff;
-    color: #202124;
-    border-right: 1px solid #dadce0;
-}
-
 .sidebar .nav-link {
-    color: #5f6368;
-    padding: 16px;
-    display: block;
-    transition: background-color 0.3s;
+    color: #333;
+    transition: all 0.3s ease;
 }
 
-.sidebar .nav-link:hover, .sidebar .nav-link.active {
-    background-color: #e8f0fe;
-    color: #174ea6;
+.sidebar .nav-link:hover, ..sidebar .nav-link.active {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme .navbar, body.dark-theme .sidebar {
+    background-color: #222;
+}
+
+body.dark-theme .nav-link {
+    color: #ccc;
+}
+
+body.dark-theme .nav-link:hover, body.dark-theme .nav-link.active {
+    background-color: #444;
 }
 
 /* Main content area */
